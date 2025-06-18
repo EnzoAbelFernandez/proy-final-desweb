@@ -5,7 +5,7 @@ const router = express.Router();
 const userRepo = require('./mock/userRepoMock'); // o ./repos/userRepoSqlite
 const userController = require('./controllers/userController')(userRepo);
 
-router.post('/api/users/login', userController.login);
-router.post('/api/users/register', userController.register);
+router.post('/login', userController.login);
+router.post('/register', userController.register);
 
 module.exports = router;
