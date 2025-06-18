@@ -2,7 +2,7 @@ const API = "http://localhost:3000/api";
 let activeAccount = null;
 
 // 🚧 Activa o desactiva el modo mock
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 // 📦 Datos simulados
 const mockUsers = [{ username: "juan", password: "1234" }];
