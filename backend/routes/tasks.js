@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const taskRepo = require('./mock/taskRepoMock');
+const taskRepo = require('./repos/taskRepoSqLite');
 const taskController = require('./controllers/taskController')(taskRepo);
 
 // Rutas
